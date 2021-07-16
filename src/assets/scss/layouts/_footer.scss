@@ -1,0 +1,14 @@
+$footer-max-width: 1200px;
+
+.l-footer {
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  &__container {
+    width: 100%;
+    max-width: $footer-max-width;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

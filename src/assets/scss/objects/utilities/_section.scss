@@ -1,0 +1,21 @@
+.section-title {
+  position: relative;
+  padding: 1em 10px;
+  background-color: $primary;
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100% - 4px);
+    top: 2px;
+    bottom: 2px;
+    border: 1px solid $white;
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+  &::after {
+    content: var(data-attr);
+  }
+
+}

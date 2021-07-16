@@ -1,0 +1,56 @@
+.p-footer {
+  border-top: 3px solid $primary;
+  padding-top: 2.5rem;
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    img {
+      width: 200px;
+    }
+
+  }
+  &__body {
+    margin-bottom: 4rem;
+    p {
+      margin-bottom: 1.25rem;
+    }
+  }
+  &__footer {
+    p {
+      font-size: .75rem;
+      text-align: center;
+      margin-bottom: 0;
+      padding: 10px 0;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+  &__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: .75em 0;
+    width: 12rem;
+    border-radius: 50vh;
+    color: $white !important;
+    background-color: $primary;
+    line-height: 1;
+    $tf: translateY(-50%);
+    &::before {
+      position: absolute;
+      content: "\f054";
+      display: block;
+      right: 0;
+      top: 50%;
+      transform: $tf translateX(-10px);
+      font-family: $fontawesome-family;
+      font-weight: 900;
+      transition: transform .3s ease;
+    }
+    &:hover::before {
+      transform: $tf translateX(-4px);
+    }
+  }
+}
